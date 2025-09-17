@@ -14,6 +14,7 @@
 
 :root {
   --clr-primary: hsl(4, 100%, 67%);
+  --clr-secondary: #ff5474;
   --clr-primary-shade: #1b4133;
 
   --clr-white: #fff;
@@ -60,6 +61,12 @@
   --sp-11: #{toRem(96px)};
   --sp-12: #{toRem(128px)};
 
-  --container-width-desktop: #{toRem(1440px)};
-  --container-width-mobile: #{toRem(375px)};
+  --border-normal: var(--sp-3);
+  --border-large: var(--sp-5);
+
+  --tablet-max-width-cta: #{toRem(530px)};
+  --desktop-max-width-cta: #{toRem(928px)};
 }
+
+$bp-tablet: toRem(383px);
+$bp-desktop: toRem(770px);

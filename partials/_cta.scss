@@ -1,0 +1,112 @@
+@use "./utils" as *;
+@use "./variables" as *;
+
+.cta {
+  background-color: var(--clr-grey-4);
+
+  @media (min-width: $bp-tablet) {
+    border-radius: var(--border-large);
+    max-width: var(--tablet-max-width-cta);
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: var(--desktop-max-width-cta);
+    padding: var(--sp-7);
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--sp-6);
+  }
+}
+
+.cta-content {
+  padding-block: var(--sp-7);
+  padding-inline: var(--sp-6);
+
+  @media (min-width: $bp-desktop) {
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.cta-title {
+  font-size: var(--fs-10);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+
+  margin-block-end: var(--sp-6);
+}
+
+.cta-description {
+  margin-block-end: var(--sp-6);
+}
+
+.cta-list {
+  list-style: none;
+  margin-block-end: vaR(--sp-8);
+}
+
+.cta-list-item {
+  display: flex;
+  align-items: start;
+  gap: var(--sp-5);
+}
+
+.cta-list-item:not(:last-child) {
+  margin-block-end: var(--sp-4);
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-label {
+  // display: block;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-3);
+  margin-block-end: var(--sp-3);
+}
+
+.cta-email {
+  border-radius: var(--border-normal);
+  padding-inline: var(--sp-5);
+  padding-block: var(--sp-5);
+
+  border: 1px solid var(--clr-grey-3);
+
+  margin-block-end: var(--sp-5);
+}
+
+.cta-email:focus {
+  box-shadow: none;
+  outline: 1px solid var(--clr-grey-3);
+}
+
+.cta-email::placeholder {
+  color: var(--clr-grey-3);
+}
+
+.cta-btn {
+  border: none;
+  cursor: pointer;
+  padding-block: var(--sp-5);
+  border-radius: var(--border-normal);
+
+  background-color: var(--clr-grey-1);
+  color: var(--clr-grey-4);
+  font-weight: var(--fw-bold);
+}
+
+.cta-btn:hover {
+  background: linear-gradient(
+    to right,
+    var(--clr-secondary),
+    var(--clr-primary)
+  );
+  box-shadow: 0 3px 10px var(--clr-secondary);
+}

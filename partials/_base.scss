@@ -1,8 +1,21 @@
 @use "utils" as *;
+@use "variables" as *;
 
 body {
   font-family: var(--ff-main), sans-serif;
   font-size: var(--fs-default);
   font-weight: var(--fw-normal);
   line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  min-height: 100svh;
+  background-color: var(--clr-grey-1);
+
+  @media (min-width: $bp-tablet) {
+    align-items: center;
+  }
 }

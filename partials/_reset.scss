@@ -11,13 +11,25 @@ h4,
 h5,
 h6,
 td,
-th,
-button {
+th {
   font-weight: inherit;
   font-size: inherit;
+}
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+*:focus,
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0.8rem var(--clr-grey-1);
 }
