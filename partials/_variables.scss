@@ -68,5 +68,10 @@
   --desktop-max-width-cta: #{toRem(928px)};
 }
 
+.thanks {
+  --tablet-max-width-cta: #{toRem(500px)};
+  --desktop-max-width-cta: #{toRem(500px)};
+}
+
 $bp-tablet: toRem(383px);
 $bp-desktop: toRem(770px);

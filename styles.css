@@ -54,6 +54,11 @@
   --desktop-max-width-cta: 58rem;
 }
 
+.thanks {
+  --tablet-max-width-cta: 31.25rem;
+  --desktop-max-width-cta: 31.25rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,7 +84,8 @@ input {
   font-family: inherit;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
   display: block;
 }
@@ -209,6 +215,32 @@ body {
 .cta-btn:hover {
   background: linear-gradient(to right, var(--clr-secondary), var(--clr-primary));
   box-shadow: 0 3px 10px var(--clr-secondary);
+}
+
+.cta.thanks {
+  padding-inline: var(--sp-9);
+  padding-block: var(--sp-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.thanks .cta-img {
+  padding: 0;
+  margin-block-end: var(--sp-6);
+}
+
+.thanks .cta-content {
+  padding: 0;
+}
+
+.thanks .cta-description {
+  margin-block-end: var(--sp-7);
+}
+
+.thanks span {
+  font-weight: var(--fw-bold);
 }
 
 /*# sourceMappingURL=styles.css.map */

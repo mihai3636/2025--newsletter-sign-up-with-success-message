@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main class="container">
+      <article class="cta thanks">
+        <picture class="cta-img">
+          <source
+            srcset="assets/images/icon-success.svg"
+            media="(min-width: 770px)"
+          />
+          <source
+            srcset="assets/images/icon-success.svg"
+            media="(min-width: 383px)"
+          />
+          <img src="assets/images/icon-success.svg" alt="Picture of check" />
+        </picture>
+        <div class="cta-content">
+          <h1 class="cta-title">Thanks for subscribing!</h1>
+          <p class="cta-description">
+            A confirmation email has been sent to
+            <span>ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <form action="#" class="cta-form" novalidate>
+            <button class="cta-btn">Dismiss message</button>
+          </form>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

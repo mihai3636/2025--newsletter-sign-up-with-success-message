@@ -1,0 +1,30 @@
+@use "./utils" as *;
+@use "./variables" as *;
+
+.cta.thanks {
+  padding-inline: var(--sp-9);
+  padding-block: var(--sp-8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 0;
+}
+
+.thanks .cta-img {
+  padding: 0;
+  margin-block-end: var(--sp-6);
+}
+
+.thanks .cta-content {
+  padding: 0;
+}
+
+.thanks .cta-description {
+  margin-block-end: var(--sp-7);
+}
+
+.thanks span {
+  font-weight: var(--fw-bold);
+}
