@@ -13,7 +13,8 @@
 @use "./utils" as *;
 
 :root {
-  --clr-primary: hsl(4, 100%, 67%);
+  --clr-primary: rgb(255, 98, 87);
+  --clr-primary-transparent: rgb(255, 98, 87, 0.2);
   --clr-secondary: #ff5474;
   --clr-primary-shade: #1b4133;
 
