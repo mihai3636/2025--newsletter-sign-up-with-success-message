@@ -20,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./main.js"></script>
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
@@ -58,7 +59,7 @@
               <p>And much more!</p>
             </li>
           </ul>
-          <form action="#" class="cta-form invalid" novalidate>
+          <form id="form" action="#" class="cta-form" novalidate>
             <label class="cta-label" for="email">Email address</label>
             <input
               class="cta-email"
@@ -66,6 +67,9 @@
               id="email"
               name="emailAddress"
               placeholder="email@company.com"
+              required
+              minlength="8"
+              autocomplete="off"
             />
             <button class="cta-btn">Subscribe to monthly newsletter</button>
           </form>

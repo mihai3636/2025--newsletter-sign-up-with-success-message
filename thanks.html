@@ -40,14 +40,28 @@
           <h1 class="cta-title">Thanks for subscribing!</h1>
           <p class="cta-description">
             A confirmation email has been sent to
-            <span>ash@loremcompany.com</span>. Please open it and click the
-            button inside to confirm your subscription.
+            <span id="email">ash@loremcompany.com</span>. Please open it and
+            click the button inside to confirm your subscription.
           </p>
           <form action="#" class="cta-form" novalidate>
-            <button class="cta-btn">Dismiss message</button>
+            <button id="btnDismiss" class="cta-btn">Dismiss message</button>
           </form>
         </div>
       </article>
     </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const emailParam = decodeURIComponent(params.get("email"));
+      const emailEl = document.getElementById("email");
+      const btnEl = document.getElementById("btnDismiss");
+
+      emailEl.textContent = emailParam;
+
+      btnEl.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "/index.html";
+      });
+    </script>
   </body>
 </html>
